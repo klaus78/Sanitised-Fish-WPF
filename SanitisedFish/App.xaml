@@ -1,0 +1,24 @@
+﻿<Application x:Class="SanitisedFish.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SanitisedFish"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorBlueLogo">#FF8FAADB</Color>
+            <SolidColorBrush x:Key="brushBlueLogo" Color="{StaticResource colorBlueLogo}" />
+            <Style TargetType="Button">
+                <Setter Property="Width" Value="150" />
+                <Setter Property="Height" Value="40" />
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="{StaticResource colorBlueLogo}" Offset="0.567"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
